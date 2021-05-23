@@ -1,0 +1,121 @@
+
+
+
+
+
+
+body{
+    background-color: #111112;
+    font-family: 'Special Elite', cursive;
+    color: #E8E8E8;
+}
+
+h1{
+    text-align:center;
+}
+nav{
+    margin-top:10em;
+}
+nav ul{
+    width:80%;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5em;
+    grid-template-rows: 5em 5em;
+
+    list-style-type: none;
+
+}
+nav ul li{
+    border-radius:1em;
+    padding: 2em ;
+    background-color: #168236;
+    border-bottom:.5em solid  #0000008a;
+    text-align: center;
+    background-image: url('../img/widm-logo.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    transition:.5s;
+
+}
+nav ul li::after{
+    content: '';
+    display: block;
+    margin-top:calc(2em - 2px);
+    height: 2px;
+    width:0%;
+    background: orange;
+    transition:.5s
+}
+
+nav ul li:hover{
+    background-color: #1a963f;
+    transition:.5s;
+    background-position:left center;
+}
+nav ul li:hover:after {
+    width:100%;
+   
+    transition:  .5s;
+}
+
+nav ul li:nth-of-type(4){
+    grid-column: 2;
+    grid-row: 2;
+
+    background-color: #B81200
+}
+
+
+
+
+.fjkdslf{
+color: #1a963f;
+color: #C79B78;
+color: #E8E8E8;
+color: #111112;
+color: #168236;
+}
+
+form{
+    margin:5em auto;
+    background-color: #1a963f;
+    width:50%;
+    display:flex;
+    flex-direction:column;
+}
+form input{
+    outline:none;
+    border-radius:1em;
+    text-align:center;
+    padding:.5em 0;
+    font-size:2em;
+    margin: .5em auto;
+    width:50%;
+}
+form input[type="submit"]{
+    border-radius:1em;
+    background-color: #168236;
+    border-bottom:.5em solid  #0000008a;
+    text-align: center;
+    background-image: url('../img/widm-logo.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    transition:.5s;
+    color:#E8E8E8;
+}
+
+
+form input[type="submit"]:hover{
+    background-color: #1a963f;
+    transition:.5s;
+    background-position:left center;
+}
+form input[type="submit"]:hover:after{
+    width:100%;
+   
+    transition:  .5s;
+}
